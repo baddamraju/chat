@@ -3,7 +3,7 @@
 error_reporting(E_ALL);
  $db_host='localhost';
  $db_user='root';
- $db_pass='4141';
+ $db_pass='root';
  $db_name='chat';
  if($connection=mysqli_connect($db_host,$db_user,$db_pass))
  {

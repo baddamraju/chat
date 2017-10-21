@@ -13,3 +13,6 @@ html,body{
 #input{
 	padding: 10px;
 }
+#feedback{
+	display: none;
+}
