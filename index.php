@@ -11,22 +11,26 @@ require('includes/core.inc.php');
 	<link rel="stylesheet" type="text/css" href="public/css/main.css" />
 </head>
 <body>
-<div id="input">
-	<div id="feedback">
+		<div class="main">
+
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<a class="navbar-brand" href="#">chatOn</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					<div class="navbar-nav">
+						<a class="nav-item nav-link active" href="index.php">Home <span class="sr-only">(current)</span></a>
+						<a class="nav-item nav-link" href="signup.php">Sign Up</a>
+						<a class="nav-item nav-link" href="login.php">Log In</a>
+					</div>
+				</div>
+		</nav>
+
+		<img src="public/images/bg.jpg" class="img-fluid bg" />
+		<a class="btn btn-primary btn-signin" href="login.php">Start Chatting</a>
 
 	</div>
-	<form action="#" method="post" id="form_input">
-	  <label>Enter Name:<input type="text" name="sender" id="sender"></label>
-	  <label>Enter Message:
-			<textarea name="message" col="12" rows="4" id="msg"></textarea>
-		</label><br />
-	  <input type="submit" name="send" value="Send Message" id="submit_btn">
-	</form>
-</div>
-<div id="messages">
-
-</div>
-
 
 <script type="text/javascript" src="public/javascript/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="public/javascript/script.js"></script>

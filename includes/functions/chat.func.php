@@ -9,6 +9,11 @@ function confirm_query($result){
 	}
 }
 
+function redirect_to($new_location){
+	header("Location: ".$new_location);
+	exit;
+}
+
 function get_msg()
 {
 	global $connection;
