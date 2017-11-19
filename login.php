@@ -54,19 +54,13 @@ if(isset($_SESSION["username"])){ // is the user already logged in?
 <script type="text/javascript" src="public/javascript/send.js"></script>
 <script>
 function validateForm(){
-    var fields = ["username_","password_"]
-    var flag=0;
-    if (document.forms["login"][fields[0]].value === "") {
-        flag=1;
-    }
-    if (document.forms["login"][fields[1]].value === "") {
-        flag=1;
-    }
-    if(flag === 1){
-      return false;
-    }
-    return true;
-}
+      if($("#username").val() === "" || $("#password").val() === ""){
+	 alert("Please enter all the details");
+	 return false;
+      }
+      
+      return true;
+  }
 </script>
 </body>
 </html>
